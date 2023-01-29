@@ -8,7 +8,7 @@ function App() {
   };
 
   const reiniciarContador = () => {
-    console.log("Reiniciar");
+    console.log("Se hace clic en Reiniciar");
   };
 
   return (
