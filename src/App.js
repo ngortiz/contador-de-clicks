@@ -4,7 +4,7 @@ import freeCodeCampLogo from "./imagenes/freecodecamp-logo.png";
 
 function App() {
   const manejarClic = () => {
-    console.log("Clic");
+    console.log("Se hace Clic en boton");
   };
 
   const reiniciarContador = () => {
