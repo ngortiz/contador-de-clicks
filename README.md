@@ -1,2 +1,1 @@
-# contador-de-clicks
-Contador de clicks hecho en React
+# Projecto Contador de Clicks
