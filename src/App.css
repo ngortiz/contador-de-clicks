@@ -1,20 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-*{
-  padding:0 ;
-  margin: 0;
-  box-sizing: border-box;
-}
 html,
 body {
   background-color: #1b1b32;
@@ -33,8 +16,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 20px;
-
 }
+
 .freecodecamp-logo {
   height: 50px;
 }
