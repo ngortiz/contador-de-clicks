@@ -7,14 +7,28 @@ import { useState } from 'react';
 
 function App() {
 
-  const [numClics, setNumClics] = useState(0);
+  const [numClics, setNumClics] = useState(1);
+  const [incrementar, setIncrementar] = useState(true)
 
   const manejarClic = () => {
-    setNumClics(numClics + 1);
+    if (incrementar === true){
+      setNumClics(numClics + 1);
+    }else {
+      setNumClics(numClics - 1);
+    }
+    
   }
 
   const reiniciarContador = () => {
-    setNumClics(0);
+    if (incrementar === true){
+      setNumClics(0);
+    }else {
+      setNumClics(100)
+    }
+  }
+
+  const incrementarODecrementar = () => {
+    setIncrementar(!incrementar)
   }
 
   return (
@@ -35,6 +49,10 @@ function App() {
           texto='Reiniciar'
           esBotonDeClic={false}
           manejarClic={reiniciarContador} />
+        <Boton 
+          texto={ incrementar===true ? 'Decrementar' : 'Incrementar' }
+          esBotonDeClic={false}
+          manejarClic={incrementarODecrementar} />
       </div>
     </div>
   );
